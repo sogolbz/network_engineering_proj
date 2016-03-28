@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>کارجویان</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid" >
+    <div class="header" >
+        <div class="header1 col-sm-12">
+            <div class="col-sm-4" >
+
+                <a href="#">
+                    <img src="tel.png" width="15px" height="15px">
+                </a>
+                <p>تماس با ما</p>
+            </div>
+            <div class="col-sm-4">
+
+                <a href="#">
+                    <img src="Add-icon.png" width="15px" height="15px">
+                </a>
+                <a>  عضویت / ورود</a>
+            </div>
+            <div class="col-sm-4">
+                <p><b> شرکت  <span style="color: #8841d2;"> کارجویان</span></b></p>
+            </div>
+        </div>
+        <div class="menu col-sm-12" style="background-color: rgba(161, 12, 5, 0.09);">
+            <ul class="list-inline">
+                <li><a href="#">خانه</a></li>
+                <li><a href="#">کارجویان</a></li>
+                <li><a href="#">کارفرمایان</a></li>
+                <li><a href="#">درباره ما</a></li>
+            </ul>
+        </div>
+
+        </div>
+
+
+
+        <div class="content">
+            <div style="text-align: center; color: #840202"><h2>   لیست کارجویان   </h2>
+
+            <div id="result">
+
+
+                <div class="row Rrow">
+                        <div class="col-sm-4">
+                       <p> مدرک</p>
+
+                            <select class="formcontrol" style="width: 100px"  ><option value="">انتخاب کنید</option>
+
+                                <option value="8">کارشناسی</option>
+                                <option value="9">کارشناسی ارشد</option>
+                                <option value="5">متوسطه</option>
+                            </select>
+
+                    </div>
+
+
+                        <div class="col-sm-4">
+                            <p> مدرک</p>
+
+                            <select class="formcontrol" style="width: 100px"  ><option value="">انتخاب کنید</option>
+
+                                <option value="8">کارشناسی</option>
+                                <option value="9">کارشناسی ارشد</option>
+                                <option value="5">متوسطه</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="col-sm-4">
+                                <p> مدرک</p>
+
+                                <select class="formcontrol" style="width: 100px"  ><option value="">انتخاب کنید</option>
+
+                                    <option value="8">کارشناسی</option>
+                                    <option value="9">کارشناسی ارشد</option>
+                                    <option value="5">متوسطه</option>
+                                </select>
+
+                            </div>
+                    </div>
+
+                    <br>
+
+                <div class="row Rrow">
+                    <div class="col-sm-4">
+                        <p> مدرک</p>
+
+                        <select class="formcontrol" style="width: 100px"  ><option value="">انتخاب کنید</option>
+
+                            <option value="8">کارشناسی</option>
+                            <option value="9">کارشناسی ارشد</option>
+                            <option value="5">متوسطه</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="col-sm-4">
+                        <p> مدرک</p>
+
+                        <select class="formcontrol" style="width: 100px"  ><option value="">انتخاب کنید</option>
+
+                            <option value="8">کارشناسی</option>
+                            <option value="9">کارشناسی ارشد</option>
+                            <option value="5">متوسطه</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="col-sm-4">
+                        <p> مدرک</p>
+
+                        <select class="formcontrol" style="width: 100px"  ><option value="">انتخاب کنید</option>
+
+                            <option value="8">کارشناسی</option>
+                            <option value="9">کارشناسی ارشد</option>
+                            <option value="5">متوسطه</option>
+                        </select>
+
+                    </div>
+                </div>
+                <br>
+                <div class="row Rrow"  style="margin-bottom: 10px">
+                    <input type="submit" value="جستجو" style="margin-left:10px; float:left" id="btnSearchJob" >
+
+                </div>
+
+
+                <div class="TableData">
+                    <table id="table">
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col style="width: 120px">
+                            <col>
+                            <col>
+                         </colgroup>
+
+                    <tr>
+                        <th>  مدرک </th>
+                        <th>  گرایش  </th>
+                        <th>  سابقه   </th>
+                        <th>   سن  </th>
+                        <th>   آدرس  </th>
+                        <th>  استان  </th>
+                        <th>   تاریخ ثبت  </th>
+                    </tr>
+                        <tr>
+                            <td>   دکتری  </td>
+                            <td>   نرم افزار     </td>
+                          <td> 4  </td>
+                            <td>  22  </td>
+                            <td>    بلوار همیلا -میدان پونک     </td>
+                            <td>  تهران   </td>
+                            <td>   تاریخ ثبت   </td>
+                        </tr>
+                        <tr>
+                            <td>   دکتری  </td>
+                            <td>   نرم افزار     </td>
+                            <td> 4  </td>
+                            <td>  22  </td>
+                            <td>    بلوار همیلا -میدان پونک     </td>
+                            <td>  تهران   </td>
+                            <td>   تاریخ ثبت   </td>
+                        </tr> <tr>
+                        <td>   دکتری  </td>
+                        <td>   نرم افزار     </td>
+                        <td> 4  </td>
+                        <td>  22  </td>
+                        <td>    بلوار همیلا -میدان پونک     </td>
+                        <td>  تهران   </td>
+                        <td>   تاریخ ثبت   </td>
+                    </tr> <tr>
+                        <td>   دکتری  </td>
+                        <td>   نرم افزار     </td>
+                        <td> 4  </td>
+                        <td>  22  </td>
+                        <td>    بلوار همیلا -میدان پونک     </td>
+                        <td>  تهران   </td>
+                        <td>   تاریخ ثبت   </td>
+                    </tr> <tr>
+                        <td>   دکتری  </td>
+                        <td>   نرم افزار     </td>
+                        <td> 4  </td>
+                        <td>  22  </td>
+                        <td>    بلوار همیلا -میدان پونک     </td>
+                        <td>  تهران   </td>
+                        <td>   تاریخ ثبت   </td>
+                    </tr> <tr>
+                        <td>   دکتری  </td>
+                        <td>   نرم افزار     </td>
+                        <td> 4  </td>
+                        <td>  22  </td>
+                        <td>    بلوار همیلا -میدان پونک     </td>
+                        <td>  تهران   </td>
+                        <td>   تاریخ ثبت   </td>
+                    </tr> <tr>
+                        <td>   دکتری  </td>
+                        <td>   نرم افزار     </td>
+                        <td> 4  </td>
+                        <td>  22  </td>
+                        <td>    بلوار همیلا -میدان پونک     </td>
+                        <td>  تهران   </td>
+                        <td>   تاریخ ثبت   </td>
+                    </tr> <tr>
+                        <td>   دکتری  </td>
+                        <td>   نرم افزار     </td>
+                        <td> 4  </td>
+                        <td>  22  </td>
+                        <td>    بلوار همیلا -میدان پونک     </td>
+                        <td>  تهران   </td>
+                        <td>   تاریخ ثبت   </td>
+                    </tr> <tr>
+                        <td>   دکتری  </td>
+                        <td>   نرم افزار     </td>
+                        <td> 4  </td>
+                        <td>  22  </td>
+                        <td>    بلوار همیلا -میدان پونک     </td>
+                        <td>  تهران   </td>
+                        <td>   تاریخ ثبت   </td>
+                    </tr> <tr>
+                        <td>   دکتری  </td>
+                        <td>   نرم افزار     </td>
+                        <td> 4  </td>
+                        <td>  22  </td>
+                        <td>    بلوار همیلا -میدان پونک     </td>
+                        <td>  تهران   </td>
+                        <td>   تاریخ ثبت   </td>
+                    </tr> <tr>
+                        <td>   دکتری  </td>
+                        <td>   نرم افزار     </td>
+                        <td> 4  </td>
+                        <td>  22  </td>
+                        <td>    بلوار همیلا -میدان پونک     </td>
+                        <td>  تهران   </td>
+                        <td>   تاریخ ثبت   </td>
+                    </tr> <tr>
+                        <td>   دکتری  </td>
+                        <td>   نرم افزار     </td>
+                        <td> 4  </td>
+                        <td>  22  </td>
+                        <td>    بلوار همیلا -میدان پونک     </td>
+                        <td>  تهران   </td>
+                        <td>   تاریخ ثبت   </td>
+                    </tr>
+
+
+                    </table>
+
+
+
+                </div>
+<!--
+                    <div class="form-group col-md-4">
+                        <label class="control-label col-md-3" for="MajorID">رشته</label>
+                        <div class="col-md-9">
+                            <select class="form-control input-sm" data-val="true" data-val-number="The field رشته must be a number." id="MajorID" name="MajorID" tabindex="-1" style="display: none;"><option value="">انتخاب کنید</option>
+                                <option value="13200">BCA</option>
+
+                            </select><span class="select2 select2-container select2-container--default" dir="rtl" style="width: 280px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-MajorID-container"><span class="select2-selection__rendered" id="select2-MajorID-container" title="انتخاب کنید">انتخاب کنید</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label class="control-label col-md-3" for="FieldID">گرایش</label>
+                        <div class="col-md-9">
+                            <select class="form-control input-sm" data-val="true" data-val-number="The field گرایش must be a number." id="FieldID" name="FieldID" tabindex="-1" style="display: none;"></select><span class="select2 select2-container select2-container--default" dir="rtl" style="width: 280px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-FieldID-container"><span class="select2-selection__rendered" id="select2-FieldID-container"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row Rrow">
+                    <div class="form-group col-md-4">
+                        <label class="control-label col-md-3" for="SkillId">مهارت</label>
+                        <div class="col-md-9">
+                            <select class="form-control input-sm multi" data-val="true" data-val-number="The field مهارت must be a number." id="SkillId" name="SkillId" tabindex="-1" style="display: none;"></select><span class="select2 select2-container select2-container--default" dir="rtl" style="width: 280px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-SkillId-container"><span class="select2-selection__rendered" id="select2-SkillId-container"><span class="select2-selection__placeholder"> </span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label class="control-label col-md-3" for="JobId">شغل درخواستی</label>
+                        <div class="col-md-9">
+                            <select class="form-control input-sm multi" data-val="true" data-val-number="The field شغل درخواستی must be a number." id="JobId" name="JobId" tabindex="-1" style="display: none;"></select><span class="select2 select2-container select2-container--default" dir="rtl" style="width: 280px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-JobId-container"><span class="select2-selection__rendered" id="select2-JobId-container"><span class="select2-selection__placeholder"> </span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label class="control-label col-md-3" for="HistoryJobId">سابقه شغلی</label>
+                        <div class="col-md-9">
+                            <select class="form-control input-sm multi" data-val="true" data-val-number="The field سابقه شغلی must be a number." id="HistoryJobId" name="HistoryJobId" tabindex="-1" style="display: none;"></select><span class="select2 select2-container select2-container--default" dir="rtl" style="width: 280px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-HistoryJobId-container"><span class="select2-selection__rendered" id="select2-HistoryJobId-container"><span class="select2-selection__placeholder"> </span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row Rrow">
+                    <div class="form-group col-md-4">
+                        <label class="control-label col-md-3" for="StateID">استان</label>
+                        <div class="col-md-9">
+                            <select class="form-control input-sm" data-val="true" data-val-number="The field استان must be a number." id="StateID" name="StateID" tabindex="-1" style="display: none;"><option value="">انتخاب کنید</option>
+
+                                <option value="4809">یزد</option>
+                            </select><span class="select2 select2-container select2-container--default" dir="rtl" style="width: 280px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-StateID-container"><span class="select2-selection__rendered" id="select2-StateID-container" title="انتخاب کنید">انتخاب کنید</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label class="control-label col-md-3" for="CityID">شهر</label>
+                        <div class="col-md-9">
+                            <select class="form-control input-sm" data-val="true" data-val-number="The field شهر must be a number." id="CityID" name="CityID" tabindex="-1" style="display: none;"><option value="">انتخاب کنید</option>
+                            </select><span class="select2 select2-container select2-container--default" dir="rtl" style="width: 280px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-CityID-container"><span class="select2-selection__rendered" id="select2-CityID-container" title="انتخاب کنید">انتخاب کنید</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group col-md-4">
+                        <label class="control-label col-md-3" for="Gender">جنسیت</label>
+                        <div class="col-md-9">
+                            <select class="form-control input-sm" data-val="true" data-val-number="The field جنسیت must be a number." id="Gender" name="Gender" tabindex="-1" style="display: none;"><option value="">انتخاب کنید</option>
+                                <option value="1">آقا</option>
+                                <option value="0">خانم</option>
+                            </select><span class="select2 select2-container select2-container--default" dir="rtl" style="width: 280px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Gender-container"><span class="select2-selection__rendered" id="select2-Gender-container" title="انتخاب کنید">انتخاب کنید</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row Rrow">
+                    <input type="submit" value="" style="margin-left:10px; float:left" id="btnSearchJob">
+                </div>
+                <br>
+            </div>
+
+-->
+        </div>
+    </div>
+
+
+            <div class="footer">
+                <div class="col-sm-6" id="footer1">
+                    <form id="contactform">
+                        <p><b> ایمیل</b></p>
+                        <input type="text" id="emailtext" >
+                        <br><br>
+                        <p><b> نام</b></p>
+                        <input type="text"  id="nametext">
+                        <br><br>
+                        <p><b> توضیحات</b></p>
+                    <textarea  id="areatext">
+                        </textarea>
+                        <br><br>
+                        <input type="submit" value="ارسال" id="submitext">
+                    </form>
+                </div>
+                <div class="col-sm-6" id="footer2">
+
+                    <p style="margin-top: 10px ; "> لینک های بیشتر </p>
+                    <br><br>
+                    <a href="http://www.iranjobs.com">
+                        <img src="iranjobs.jpg" width="50px" height="50px">
+                    </a>
+                    <a href="http://www.glassdoor.com">
+                        <img src="glassdoor.JPG" width="50px" height="50px">
+                    </a>
+                </div>
+
+
+            </div>
+
+
+    </div>
+    </div>
+</body>
+</html>

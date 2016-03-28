@@ -1,0 +1,306 @@
+
+.container-fluid{
+    background-color:rgba(51, 23, 22, 0.09);
+    font-family: "B Nazanin+ Regular";
+}
+.header{
+
+    margin-bottom: 5px;
+    height: 30px;
+
+}
+.col-sm-4{
+    height: 15px;
+    margin-bottom: 3px;
+    text-align: center;
+
+}
+p{
+    float: right;
+}
+img{
+    float: right;
+
+}
+a{
+    float: right;
+    margin: 3px;
+    font-color: #330c09;
+}
+ul{
+    float: right;
+    text-align: right;
+    margin-top: 5px;
+
+
+}
+li{
+    float: right;
+    text-align: right;
+    font-color: #330c09;
+    margin-right: 15px;
+
+}
+.header1{
+    background-color: rgba(9, 51, 17, 0.09);
+    height:25px;
+}
+.slider {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.content{
+    margin-top: 29px;
+}
+
+.SearchBox {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.Search {
+    width: 300px;
+    height: 300px;
+
+
+
+
+}
+@media (min-width: 768px) {
+
+    .SearchBox {
+        width: 300px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        padding: 20px 0;
+
+    }
+    .Search {
+        width: 300px;
+        float: right;
+        height: 150px;
+
+
+        margin-right:150px; /* width of .container gutter */
+        margin-top: 150px;
+    }
+}
+@media (min-width: 992px) {
+    .SearchBox {
+        width: 970px;
+        margin-left: -485px;
+    }
+}
+@media (min-width: 1200px) {
+    .SearchBox {
+        width: 1170px;
+        margin-left: -585px;
+    }
+}
+
+#homepage-feature > .carousel-control {
+    width: 30px;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: none;
+    filter: none;
+    opacity: 1;
+}
+#homepage-feature > .carousel-control span {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+form{
+    direction: rtl;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+
+   color: rgba(185, 16, 0, 0.65);
+}
+.textjob{
+    text-align: center;
+
+}
+#inputjob {
+
+    margin-right: 15px;
+    float: right;
+}
+#inputplace{
+    margin-right: 15px;
+}
+
+li{
+    float: right;
+    direction: rtl;
+}
+.news img{
+    width: 130px;
+    height: 70px;
+
+    margin: 10px;
+    margin-right: 0px;
+
+}
+
+#news1{
+    height: 220px;
+    margin-top: 10px;
+    text-align: right;
+}
+#news2{
+    height: 220px;
+    margin-top: 10px;
+    text-align: right;
+}
+#news3{
+    height: 220px;
+    margin-top: 10px;
+    text-align: right;
+}
+h3{
+    text-align: right;
+    float: initial;
+}
+h5{
+    text-align: right;
+    float: right;
+}
+.footer{
+
+    background-color: rgba(36, 5, 5, 0.61);
+    height: 200px;
+    color: white;
+}
+#contactform{
+
+    direction: rtl;
+    float: right;
+    text-align: center !important;
+    color: rgba(255, 10, 20, 0.61) !important;
+    font-size: 10px !important;
+    margin: 30px;
+
+}
+#emailtext{
+
+    float: right;
+    direction: rtl;
+    margin-right: 10px;
+}
+#nametext{
+
+    float: right;
+    direction: rtl;
+    margin-right: 17px;
+}
+#areatext{
+
+    float: right;
+    direction: rtl;
+    margin-right: 10px;
+
+}
+#submitext{
+
+    float: right;
+    direction: rtl;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+#footer1{
+
+    margin-top: 10px;
+    float: right;
+    text-align: center;
+}
+
+#footer2{
+
+    margin-top: 10px;
+    float: right;
+    text-align:right ;
+}
+
+.formcontrol {
+    float: right;
+    text-align: right;
+    direction: rtl;
+    margin-right: 20px; ;
+
+}
+
+#btnSearchJob {
+    background: url(/Images/search1.jpg);
+    cursor: pointer;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border:1px salmon solid  ;
+    border-radius: 0;
+
+}
+
+#table{
+    border: 1px slateblue solid;
+    text-align: right;
+    width: 100%;
+    border-bottom:1pt solid black;
+    margin-bottom: 10px;
+}
+.TableData table th {
+    text-align: center;
+    width: 40px;
+    border-right:1px salmon solid ;
+
+}
+
+.TableData table tr {
+
+    margin-bottom: 6px;
+    border-bottom:1pt solid black;
+}
+.TableData table td {
+
+    text-align: center;
+    width: 40px;
+    border-right:1px salmon solid ;
+
+}
+#rowlog{
+
+
+
+}
+#loginDiv{
+
+    margin-left: 400px;
+    margin-top: 10px;
+}
+#mainlogin{
+
+    height: 320px;
+    background-color: rgba(255, 10, 20, 0.21);
+    margin-bottom: 10px;
+
+}
+#loginform{
+
+    text-align: center;
+    float: right;
+    direction: rtl;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
