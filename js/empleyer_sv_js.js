@@ -3,6 +3,7 @@ $(document).ready(function () {
       change_ersonal_data = $('#personal_data'),
 	  post_new_ad = $('#new_addvertisement'),
 	   search_res = $('#resume_search'),
+      outsourcing = $('#outsourcing '),
       overlay = $('.overlay'),
      isClosed = false;
 
@@ -13,7 +14,7 @@ $(document).ready(function () {
 	 change_ersonal_data.click(function () {
       hamburger_cross();
 $('#wrapper').toggleClass('toggled');
-$('#id4').addClass('choice1'); 
+$('#id4').addClass('choice1');
 $('#id2').addClass('choice1');    
 $('#id3').addClass('choice1');    
 $('#id1').removeClass('choice1');      
@@ -21,7 +22,7 @@ $('#id1').removeClass('choice1');
 	 post_new_ad.click(function () {
       hamburger_cross();
 $('#wrapper').toggleClass('toggled');
-$('#id4').addClass('choice1'); 
+$('#id4').addClass('choice1');
 $('#id1').addClass('choice1');    
 $('#id3').addClass('choice1');    
 $('#id2').removeClass('choice1');      
@@ -29,12 +30,20 @@ $('#id2').removeClass('choice1');
 	 search_res.click(function () {
       hamburger_cross();
 $('#wrapper').toggleClass('toggled');
-$('#id4').addClass('choice1'); 
+$('#id4').addClass('choice1');
 $('#id1').addClass('choice1');    
 $('#id2').addClass('choice1');    
 $('#id3').removeClass('choice1');      
     });
-
+outsourcing.click(function(){
+  hamburger_cross();
+  $('#wrapper').toggleClass('toggled');
+  $('#id4').addClass('choice1');
+  $('#id3').addClass('choice1');
+  $('#id1').addClass('choice1');
+  $('#id2').addClass('choice1');
+  $('#id5').removeClass('choice1');
+  })
 	
     function hamburger_cross() {
 
