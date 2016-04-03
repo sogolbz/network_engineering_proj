@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>کارجویان</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> <script src=".\js\empleyer_sv_js.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"><link rel="stylesheet" href="./css/employer_sv_css.css">
+<!-- <link href=".\homePageCss.css" rel="stylesheet" />-->
+ <link href=".\css\bootstrap-rtl.min.css" rel="stylesheet" />
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	  <script src=".\js\general_purpose_funcs.js"></script>
+<link rel="stylesheet" href=".\Style.css">
+
+</head>
+<body style="background : url(./gray_img.jpg) repeat; width:100%; height:100%;" >
+     
+        
+        
+      
+        
+     
+   <!-- <div style=" padding-top:5px; margin-top:50px; background-color:white;  opacity: 0.7;
+    filter: alpha(opacity=60); /* For IE8 and earlier */" >-->
+        <div id="wrapper">
+        <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <div class="choice" >
+                     پنل کارجو
+                    </div>
+                </li>
+                <li>
+                   <div class="choice" id="personal_data" >ویرایش پروفایل</div>
+                </li>
+				 <li>
+                   <div class="choice" id="resume" >ویرایش رزومه</div>
+                </li>
+                <li>
+                    <div class="choice" id="send_msg">ارسال درخواست برای کارفرما</div>
+                </li>
+                <li >
+                    <div class="choice" id="jobsearch">جستجوی پیشرفته</div>
+                </li>
+				<li>
+                   <div class="choice" id="exit" >خروج</div>
+                </li>
+              
+               
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+		<div  class="row" style=" width:100%; margin:auto; top:0; position:fixed; z-index:997;"> 
+		<div class="col-md-2" style="background-color:gray; height:40px; padding:5px; padding-right:20px;"> 
+		 <button type="button" class="hamburger is-closed" data-toggle="offcanvas" style="background-color: rgba(250,250,250,0.8);">
+                <span class="hamb-top" ></span>
+    			<span class="hamb-middle"></span>
+				<span class="hamb-bottom"></span>
+            </button>
+			</div>
+		
+		<div class="col-md-4" style="background-color:gray; padding:5px; height:40px;"><h4 style="color:white;"><b>جاب یاب </b> (نسخه آزمایشی )</h4>
+		
+		</div>
+		<div class="col-md-6" style="background-color:gray; padding:5px; height:40px;">
+		
+		</div>
+		
+		
+		</div>
+		
+        <div id="page-content-wrapper">
+           
+            <div class="container">
+			
+             
+			<div class="row choice1" id="id1" style=" padding-top:5px; margin-top:50px; background-color:white;  opacity: 0.7;
+			filter: alpha(opacity=60); /* For IE8 and earlier */" onclick="myfunc();" >
+                   
+				  <!---------edit personal info----------------->
+				  <div class="container-page" style="padding-top:50px; color:black; ">
+<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<h3 class="dark-grey">ویرایش اطلاعات شخصی.</h3>
+				
+				<div class="form-group col-lg-12">
+					<label>نام</label>
+					<input type="" name="" class="form-control" id="" value="">
+				</div>
+				
+				<div class="form-group col-lg-12">
+					<label>نام خانوادگی </label>
+					<input type="" name="" class="form-control" id="" value="">
+				</div>
+				
+				<div class="form-group col-lg-12">
+					<label>جنسیت</label>
+					<input type="" name="" class="form-control" id="" value="">
+				</div>
+				<div class="form-group col-lg-12">
+					<label>شماره تلفن</label>
+					<input type="" name="" class="form-control" id="" value="">
+				</div>
+					<div class="form-group col-lg-12">
+					<label>تاریخ تولد</label>
+					<input type="" name="" class="form-control" id="" value="">
+				</div>
+								
+				<div class="form-group col-lg-6">
+<button type="button" onclick="alert_win('اطلاعات شما با موفقیت ثبت شد');">ثبت نهایی </button>
+					</div>
+					
+				</div>
+					
+			<div class="col-md-3" > </div>	
+			</div>
+			
+		
+			
+		</div>
+				  <!-------------------------->
+				   
+              
+				
+			<!----->
+			
+			 <div class="row choice1" id="id2" >
+                     <div class="container-page" style="padding-top:50px; color:black;">
+					 <div class="col-md-2"> </div>
+<div class="col-md-8"  style=" padding-top:5px; margin-top:50px; background-color:white;  opacity: 0.7;
+    filter: alpha(opacity=60); /* For IE8 and earlier */" onclick="myfunc();"> 
+	<!-----------------edit resume-->
+	
+	
+	 <div class="container-page" style="padding-top:50px; color:black;">
+		<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<h3 class="dark-grey">ویرایش رزومه</h3>
+				
+				
+				<div class="form-group col-lg-12">
+					<label>مهارت های کسب شده </label>
+					<input type="" name="" class="form-control" id="" value="">
+				</div>
+				<div class="form-group col-lg-12">
+					<label>پروژه های پیشین </label>
+					<input type="" name="" class="form-control" id="" value="">
+				</div>
+				<div class="form-group col-lg-12">
+					<label>تحقیقات و مقالات </label>
+					<input type="" name="" class="form-control" id="" value="">
+				</div>
+				<div class="form-group col-lg-12">
+					<label>مدرک تحصیلی </label>
+					<input type="" name="" class="form-control" id="" value="">
+				</div>
+				
+				<div class="form-group col-lg-12">
+					<label>سایر توضیحات</label>
+					<textarea rows="4" cols="5" name="" class="form-control" id="" value=""></textarea>
+				</div>
+								
+				<div class="form-group col-lg-6">
+<button type="button" onclick="alert_win('اطلاعات شما با موفقیت ثبت شد');">ارسال </button>
+					</div>
+					
+				</div>
+					
+		<div class="col-md-3" > </div>		
+			</div>
+			
+		
+			
+		</div>
+
+	<!---------finish-------resume-->
+	
+	<div class="col-md-2"> </div>
+	</div>
+				  
+				   
+                </div>
+				
+			<!------>
+			
+			
+			
+			
+			
+			
+			<div class="row choice1" id="id3"  >
+                   
+	<div class="col-md-2"> </div>
+	<div class="col-md-8" style=" padding-top:5px; margin-top:50px; background-color:white;  opacity: 0.7;
+    filter: alpha(opacity=60); /* For IE8 and earlier */" onclick="myfunc();"> 
+	
+	
+	<!---------------send message-->
+	
+	
+	 <div class="container-page" style="padding-top:50px; color:black;">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<h3 class="dark-grey">ارسال پیام.</h3>
+				
+			
+				
+				<div class="form-group col-lg-12">
+					<label>نام شرکت گیرنده پیام </label>
+					<input type="" name="" class="form-control" id="" value="">
+				</div>
+				
+				<div class="form-group col-lg-12">
+					<label>پست شغلی </label>
+					<input type="" name="" class="form-control" id="" value="">
+				</div>
+					<div class="form-group col-lg-12">
+				<label>سایر توضیحات</label>
+					<textarea rows="4" cols="5" name="" class="form-control" id="" value=""></textarea>
+				</div>
+					
+					<div class="form-group col-lg-6">
+<button type="button" onclick="alert_win('اطلاعات شما با موفقیت ثبت شد');">ارسال </button>
+					</div>	
+					
+				</div>
+			
+				<div class="col-md-3" > </div>					
+			
+					
+				</div>
+					
+			
+			</div>
+			
+		
+			
+		</div>
+
+	<!---------finish--------send msg-->
+	
+	
+	
+				  <div class="col-md-2"> </div>
+				   
+                </div>
+			
+			<!----->
+			 
+			<div class="row " id="id4"  >
+                  <div class="col-md-1"> </div> 
+<div class="col-md-10" style=" padding:5px; margin-top:50px; background-color:white;  opacity: 0.7;
+    filter: alpha(opacity=60); border: 2px solid;
+    border-radius: 25px;  /* For IE8 and earlier */" onclick="myfunc();">  
+	
+		<div class="row" >
+	<div class="col-sm-1"></div>
+	<div class="col-md-10" >
+        <div class="slider " style="hieght:500px !important; border: 2px solid;
+    border-radius: 25px; overflow:hidden !important;">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style=" border: 2px solid;
+    border-radius: 25px;  height:500px !important; overflow:hidden !important;">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox"  style=" border: 2px solid;
+    border-radius: 25px; hieght:1000px; overflow:hidden !hidden; ">
+
+
+                    <div class="item active">
+                        <img src="2.jpg" alt="silicon vally" width="100%">
+
+                    </div>
+
+                    <div class="item">
+                        <img src="1.jpg" alt="silicon vally" width="100%">
+                    </div>
+
+                    <div class="item">
+                        <img src="3.jpg" alt="silicon vally" width="100%">
+                    </div>
+
+                    <div class="item">
+                        <img src="4.jpg" alt="silicon vally" width="100%">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#homepage-feature" data-slide="prev">
+                    <span class="fa fa-angle-left"></span>
+                </a>
+                <a class="right carousel-control" href="#homepage-feature" data-slide="next">
+                    <span class="fa fa-angle-right"></span>
+                </a>
+
+                <!--<div class="SearchBox">
+                    <div class="Search"   style="background-color:#000099;  color:white;  border: 2px solid;
+    border-radius: 25px;    padding:20px;   opacity: 0.7;
+    filter: alpha(opacity=60); /* For IE8 and earlier */position:relative;  ">
+                        <form  >
+       
+                      شغل:    <input type="text" value="" id="">
+                            <br><br>
+                              کجا: <input type="text" value="" id="inputplace">
+                          
+                            <input 	class="button button5" type="button" value="جستجو">
+
+                        </form>
+                    </div>
+
+
+
+                </div>-->
+
+            </div>
+        </div>
+		
+		<!----------------- col8---> </div>
+		
+<!---------------------> </div>
+<div class="row">
+<div class="col-md-1"></div>
+        <div class="col-sm-10 "  style="background-color:#4da6ff;  color:white;  border: 2px solid;
+    border-radius: 25px;    padding:20px;   opacity: 0.9;
+    filter: alpha(opacity=60); /* For IE8 and earlier */position:relative; " >
+            <div class="col-sm-6" id="karjuyan" style="font-size: 30px">
+            <p> <b> آخرین کارجویان ثبت شده </b></p>
+            <ul>
+                <li>مهندس کامیوتر-تهران-4 سال سابقه - مرد</li>
+                <li>مهندس کامیوتر-تهران-4 سال سابقه - مرد</li>
+                <li>مهندس کامیوتر-تهران-4 سال سابقه - مرد</li>
+                <li>مهندس کامیوتر-تهران-4 سال سابقه - مرد</li>
+
+            </ul>
+
+            </div>
+            <div class="col-sm-6" id="karfarmayan" style="font-size: 30px">
+            <p><b> آخرین فرصت های شغلی ثبت شده</b></p>
+            <ul>
+                <li> استخدام مهندس کامپیوتر - تهران-با سابقه</li>
+                <li> استخدام مهندس کامپیوتر - تهران-با سابقه</li>
+                <li> استخدام مهندس کامپیوتر - تهران-با سابقه</li>
+                <li> استخدام مهندس کامپیوتر - تهران-با سابقه</li>
+
+
+            </ul>
+            </div>
+
+        </div>
+  </div>
+                </div>
+			<div class="col-md-2"> </div>
+				
+				
+            </div>
+			
+			<!----------------------------------------------------------------------------------------------------------------------->
+			 <div class="row choice1 " id="id5"  >
+                  <div class="col-md-2"> </div> 
+<div class="col-md-8" style=" padding:5px; margin-top:50px; background-color:white;  opacity: 0.7;
+    filter: alpha(opacity=60); /* For IE8 and earlier */" onclick="myfunc();">  
+	
+	<!-----------------------------------------********************************************************************************----------------------------------------------->
+	
+	
+			
+        <div class="content">
+           
+    <div style="text-align: center; color: #840202"><h2>     </h2>
+            <div id="result"><h2> فیلتر بر اساس</h2>
+
+<!------------------------------------------------------------------------------------------------------------------------------------->
+  <div class="row Rrow">
+  
+                        <div class="col-sm-4">
+                       <p> رشته</p>
+
+                            <select class="formcontrol" style="width: 100px"  ><option value="">انتخاب کنید</option>
+
+                                <option value="8">کامپیوتر</option>
+                                <option value="9">پزشکی</option>
+                                <option value="5">معماری</option>
+                            </select>
+
+                    </div>
+
+
+                        <div class="col-sm-4">
+                            <p> میزان حقوق</p>
+
+                            <select class="formcontrol" style="width: 100px"  ><option value="">انتخاب کنید</option>
+
+                                <option value="8">تا 1 میلیون</option>
+                                <option value="9">تا 2 میلیون</option>
+                                <option value="5">تا 3 میلیون</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="col-sm-4">
+                                <p> پست</p>
+
+                                <select class="formcontrol" style="width: 100px"  ><option value="">انتخاب کنید</option>
+
+                                    <option value="8">مدیر عامل</option>
+                                    <option value="9">برنامه نویس</option>
+                                    <option value="5">مویر مالی</option>
+                                </select>
+
+                            </div>
+                    </div>
+
+                    <br>
+
+                <div class="row Rrow">
+                    <div class="col-sm-4">
+                        <p>نوع ساعات کاری</p>
+
+                        <select class="formcontrol" style="width: 100px"  ><option value="">انتخاب کنید</option>
+
+                            <option value="8">تمام وقت</option>
+                            <option value="9">پاره وقت</option>
+                            <option value="5">پروژه ای</option>
+							 <option value="5">کارآموزی</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="col-sm-4">
+                        <p> سال تولد</p>
+
+                        <select class="formcontrol" style="width: 100px"  ><option value="">انتخاب کنید</option>
+
+                            <option value="">73</option>
+                            <option value="">72</option>
+                            <option value="">71</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="col-sm-4">
+                        <p> جنسیت</p>
+
+                        <select class="formcontrol" style="width: 100px"  ><option value="">انتخاب کنید</option>
+
+                            <option value="">زن</option>
+                            <option value="">مرد</option>
+                        </select>
+
+                    </div>
+                </div>
+                <br>
+				
+                <div class="row Rrow"  style="margin-bottom: 10px">
+				
+				<div class="col-md-3">
+                    <input type="button" value="جستجو" style="margin-left:10px; width:50px; height:25px;" id="btnSearchJob" >
+</div>
+                </div>
+<div class="row">
+<div class="col-md-4"></div>
+
+<div class="col-md-4"> <h2> نتایج جستجو</h2></div>
+</div>
+
+                <div class="TableData">
+                    <table id="table">
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col style="width: 120px">
+                            <col>
+                            <col>
+                         </colgroup>
+
+                    <tr>
+                        <th>  رشته </th>
+                        <th>  میزان حقوق  </th>
+                        <th>  پست   </th>
+                        <th>ساعت کاری </th>
+                        <th>   سن   </th>
+                        <th>  چنسیت  </th>
+                    </tr>
+                        <tr>
+                            <td>   کامپیوتر- نرم افزار    </td>
+                          <td> زیر 3 میلیون  </td>
+                            <td>  برنامه نویس  </td>
+                            <td>   پاره وقت   </td>
+                            <td>  20  </td>
+                            <td>   خانم   </td>
+                        </tr>
+                         <tr>
+                            <td>   کامپیوتر- نرم افزار    </td>
+                          <td> زیر 3 میلیون  </td>
+                            <td>  برنامه نویس  </td>
+                            <td>   پاره وقت   </td>
+                            <td>  20   </td>
+                            <td>   خانم   </td>
+                        </tr>   <tr>
+                            <td>   کامپیوتر- نرم افزار    </td>
+                          <td> زیر 3 میلیون  </td>
+                            <td>  برنامه نویس  </td>
+                            <td>   پاره وقت   </td>
+                            <td>  20   </td>
+                            <td>   خانم   </td>
+                        </tr>  <tr>
+                            <td>   کامپیوتر- نرم افزار    </td>
+                          <td> زیر 3 میلیون  </td>
+                            <td>  برنامه نویس  </td>
+                            <td>   پاره وقت   </td>
+                            <td>  20  </td>
+                            <td>   خانم   </td>
+                        </tr> 
+
+
+                    </table>
+
+
+
+                </div>
+
+        </div>
+    </div>
+
+
+           
+
+    </div>	 
+				  
+	
+				
+	<!-----------------------------------------********************************************************************************----------------------------------------------->
+				 
+               
+			
+			
+			
+			<!-------------------------------------------------------------------------------------------------------------------------->
+			
+			
+</div>       
+	 
+
+	 </div>
+        <!-- /#page-content-wrapper -->
+
+		
+		
+    </div>
+    <!-- /#wrapper -->
+	<!--<div  style="background-color:#66b3ff; width:100%; height:50px;    padding-top:5px;  margin-top:20px; opacity: 0.7;
+    filter: alpha(opacity=60); /* For IE8 and earlier */position:relative; bottom:0px; "> 
+		footer
+		
+		</div>---->
+<!------>
+       
+        
+ 
+
+   
+</body>
+</html>
