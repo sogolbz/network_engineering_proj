@@ -7,6 +7,12 @@
 		$(this).addClass('active');
 		e.preventDefault();
 	});
+	
+	
+
+
+	
+	
 	$('#register-form-link').click(function(e) {
 		$("#register-form").delay(100).fadeIn(100);
  		$("#login-form").fadeOut(100);
@@ -18,21 +24,30 @@
 	
 	
 });
+function redirect(url)
+{
+	window.location.replace(url);
+};
 function fadeout() {
 		
 		var radio_btn = document.getElementsByName('signup_radio');
 		var radio_text = document.getElementsByClassName('radio_text');
-		var usr_null = document.getElementsByName('signup_username')[0].innerHTML;
+		//var usr_null = document.getElementsByName('signup_username')[0].innerHTML;
 
 		
 		if(radio_btn[0].checked)
 		{
-			window.location.replace("./karjuyan.html");
+			window.location.replace("./job_seeker_sv.html");
 			window.alert("ثبت نام با موفقیت انجام شد");
 		}
 		else if(radio_btn[1].checked)
 		{
-			window.location.replace("./karfarmayan.html");
+			window.location.replace("./employer_sv.html");
+			window.alert("ثبت نام با موفقیت انجام شد");
+		}
+		else if(radio_btn[2].checked)
+		{
+			window.location.replace("./Teams.html");
 			window.alert("ثبت نام با موفقیت انجام شد");
 		}
 		else
@@ -40,7 +55,7 @@ function fadeout() {
 			window.alert("لطفا یکی از انواع کاربران را وارد کنید");
 			radio_text[0].classList.add('warning_class');
 			radio_text[1].classList.add('warning_class');
-			
+			radio_text[2].classList.add('warning_class');
 			
 			
 		}
@@ -50,4 +65,4 @@ function fadeout() {
 	function login_func()
 	{
 		window.location.replace("./karjuyan.html");
-	}
+	};
